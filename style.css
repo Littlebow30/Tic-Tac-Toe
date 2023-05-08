@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5pt;
+    font-size: 30pt;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, black, aqua, black);
+    flex-direction: column;
+}
+
+.Table {
+    display: flex;
+    flex-wrap: wrap;
+    height: 360px;
+    width: 360px; 
+}
+
+.cell {
+    display: flex;
+    flex-basis: 120px; 
+    flex-direction: center;
+    height: 120px;
+    width: 120px;
+    font-size: 60pt;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: none;
+} 
+.Table :nth-child(3n+2) {
+    border-left: 3px solid rgb(5, 0, 1);
+    border-right: 3px solid rgb(5, 0, 1);
+    
+}
+
+.Table :nth-child(n+4):nth-child(-n+6) {
+    border-bottom: 3px solid rgb(10, 3, 4);
+    border-top: 3px solid rgb(5, 0, 1);
+}
+
+.restartButton {
+    margin: 40px;
+    height: 60px;
+    width: 120px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer h3 {
+    margin: 2em;
+}
